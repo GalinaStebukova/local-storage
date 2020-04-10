@@ -1,0 +1,55 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>localStorage 5</title>
+	<link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+
+	<h1>Органайзер</h1>
+	<div class="notepad" >
+		<h2>Это блокнот</h2>
+		<h3>Здесь можно записывать свои дела</h3>
+		<button onclick="left()">👈</button>
+		<button onclick="right()">👉</button><br>
+		<textarea rows="10"  id="text" onblur="input(this)"></textarea>
+		<p id="num" ></p>
+	</div>
+
+
+	</div>
+
+	<div class="phone_book">
+		<h2>Это телефонная книга</h2>
+		<h3>Здесь все номера ваших друзей</h3>
+		<input type="text" name="name" id="name" placeholder="имя" onblur="input_name(this)">
+		<input type="text" name="family" id="family" placeholder="Фамилия" onblur="input_family(this)">
+		<input type="text" name="phone"  id="phone" placeholder="Телефон" onblur="input_phone(this)">
+
+		<button onclick="leftph()">👈</button>
+		<button onclick="rightph()">👉</button><br>
+		<p id="num_ab" ></p>
+
+	</div>
+
+	<div class="calculator">
+		<h2>Это калькулятор</h2>
+		<h3>Он сможет посчитать всю твою зарплату</h3>
+		<div id="calc-wrap">
+    		<div id="calc">
+		        <textarea id=inputVal>0</textarea>
+		    </div>
+		</div>
+		<div id="calc_story">
+		    	<textarea id=calc_history></textarea>
+		    	<p id="exp"></p>
+		   </div>
+
+	</div>
+
+
+	<button onclick="clear()">Clear</button>
+	<script src="script.js"></script>
+</body>
+</html>
